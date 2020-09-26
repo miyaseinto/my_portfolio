@@ -1,0 +1,167 @@
+.Header{
+  height: 60px;
+  background-color: white;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .letter-home{
+    text-decoration: none;
+  }
+  .home{
+    font-size: 20px;
+    color: black;
+    margin-right: 20px;
+  }
+}
+
+.Home{
+  height: 730px;
+  background-image: image-url('cropAMEMAN51017.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__letter{
+    color: white;
+    font-size: 70px;
+    font-family: 'American Typewriter',sans-serif;
+  }
+}
+
+.About{
+  width: 100%;
+  background-color: #f3f3f3;
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    .about{
+      border-bottom:solid 1px black ;
+    }
+  }
+  &__content{
+    display: flex;
+    &__image{
+      width: 45%;
+      height: 400px;
+
+      .image{
+        margin: 50px 0 50px 200px;
+        border: solid 2px black;
+        border-radius: 100px;
+        height: 300px;
+        background-image: image-url('cropAMEMAN51017.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+    }
+    &__text{
+      width: 55%;
+      .white{
+        margin: 50px 200px 50px 0;
+        height: 300px;
+        &__sentence{
+          height: 100%;
+          font-size: 15px;
+          padding: 0 30px;
+          p{
+            text-indent: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Skil{
+  background-color: #f3f3f3;
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    .skil{
+      border-bottom:solid 1px black ;
+    }
+  }
+  &__content{
+    width: 100%;
+    border:solid 1px black ;
+    .html{
+      height: 50px;
+      padding: 30px;
+      border-bottom:solid 1px black ;
+    }
+  }
+}
+
+.Work{
+  background-color: #f3f3f3;
+  &__title{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    .work{
+      border-bottom:solid 1px black ;
+    }
+  }
+  &__content{
+    display: flex;
+    &__left{
+      width: 50%;
+      border:solid 1px black ;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image{
+        height: 70%;
+        width: 70%;
+        border:solid 1px black ;
+      }
+    }
+    &__right{
+      width: 50%;
+      border:solid 1px black;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text{
+        height: 70%;
+        width: 70%;
+        border:solid 1px black ;
+      }
+    }
+  }
+}
+
+.Contact{
+  background-color: pink;
+  &__title{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    .contact{
+      border-bottom:solid 1px white ;
+    }
+  }
+  &__content{
+    height: 150px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .twitter{
+      margin: 10px;
+      text-decoration: none;
+      color: white
+    }
+    .git{
+      margin: 10px;
+      text-decoration: none;
+      color: white
+    }
+  }
+}
