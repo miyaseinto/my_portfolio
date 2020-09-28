@@ -1,8 +1,10 @@
 = render "header"
+#home
 .Home
   .Home__letter
     %p MIYAMOTO's portforio
 .About
+  #about
   .About__title
     %span.about About
   .About__content
@@ -19,6 +21,7 @@
           %p 役場を2年間で退職し、そこからエンジニアを目指すために勉強を進めております。
           
 .Skil
+  #skil
   .Skil__title
     %sapan.skil Skil
   .Skil__content
@@ -26,6 +29,7 @@
 
 
 .Work
+  #work
   .Work__title
     %span.work Work
   .Work__content
@@ -41,12 +45,13 @@
           %p Git
 
 .Contact
+  #contact
   .Contact__title
     %span.contact Contact
   .Contact__content
     .twitter
-      = link_to '#',class:"twitter" do
+      = link_to 'https://mobile.twitter.com/rSFxuyFrfCr880h',class:"twitter" do
         %span Twitter
     .git
-      = link_to '#',class:"git" do
-        %span Git
+      = link_to 'https://qiita.com/miyaseinto',class:"qiita" do
+        %span Qiita
