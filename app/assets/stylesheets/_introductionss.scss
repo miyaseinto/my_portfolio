@@ -1,3 +1,6 @@
+body{
+  background-color: #f3f3f3;
+}
 .Header{
   height: 60px;
   background-color: white;
@@ -16,6 +19,7 @@
 }
 
 .Home{
+  background-color: white;
   height: 730px;
   background-image: image-url('cropAMEMAN51017.jpg');
   background-size: cover;
@@ -30,10 +34,14 @@
     font-family: 'American Typewriter',sans-serif;
   }
 }
-
+@media(max-width: 670px){
+  .Home__letter{
+    font-size: 50px;
+  }
+}
 .About{
   width: 100%;
-  background-color: #f3f3f3;
+  
   &__title{
     text-align: center;
     font-size: 40px;
@@ -75,9 +83,32 @@
     }
   }
 }
+@media(max-width: 670px){
+  .About__content{
+    flex-direction: column;
+    align-items: center;
+    &__image{
+      width: 60%;
+      height: 40%;
+      .image{
+        margin: 0 0 10px 0;
+        height: 250px;
+      }
+    }
+    &__text{
+      width: 100%;
+      margin-bottom: 40px;
+      .white{
+        margin: 10px;
+        &__sentence{
+          padding: 20px 60px;
+        }
+      }
+    }
+  }
+}
 
 .Skil{
-  background-color: #f3f3f3;
   &__title{
     text-align: center;
     font-size: 40px;
@@ -87,17 +118,22 @@
   }
   &__content{
     width: 100%;
-    border:solid 1px black ;
     .html{
       height: 50px;
       padding: 30px;
-      border-bottom:solid 1px black ;
+      margin: 100px 30px;
+      font-size: 40px;
+      text-align: center;
     }
+  }
+}
+@media(max-width: 670px){
+  .Skil__content .html{
+    font-size: 20px;
   }
 }
 
 .Work{
-  background-color: #f3f3f3;
   &__title{
     color: black;
     text-align: center;
@@ -108,60 +144,61 @@
   }
   &__content{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     &__left{
-      width: 50%;
-      border:solid 1px black ;
+      width: 60%;
       height: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
       .image{
+        background-image: image-url('furan.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
         height: 70%;
         width: 70%;
-        border:solid 1px black ;
       }
     }
     &__right{
-      width: 50%;
-      border:solid 1px black;
-      height: 400px;
+      height: 200px;
       display: flex;
       justify-content: center;
-      align-items: center;
       .text{
-        height: 70%;
+        height: 40%;
         width: 70%;
-        border:solid 1px black ;
+        font-size: 15px;
+        .furanku{
+          font-size: 25px;
+          text-align: center;
+        }
       }
     }
   }
 }
 
 .Contact{
-  background-color: pink;
   &__title{
-    color: white;
     text-align: center;
     font-size: 40px;
     .contact{
-      border-bottom:solid 1px white ;
+      border-bottom:solid 1px black ;
     }
   }
   &__content{
     height: 150px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     .twitter{
       margin: 10px;
       text-decoration: none;
-      color: white
     }
     .git{
       margin: 10px;
       text-decoration: none;
-      color: white
     }
   }
 }
