@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #f3f3f3;
+}
+.Header{
+  height: 60px;
+  background-color: white;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .letter-home{
+    text-decoration: none;
+  }
+  .home{
+    font-size: 20px;
+    color: black;
+    margin-right: 20px;
+  }
+}
+
+.Home{
+  background-color: white;
+  height: 730px;
+  background-image: image-url('cropAMEMAN51017.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__letter{
+    color: white;
+    font-size: 70px;
+    font-family: 'American Typewriter',sans-serif;
+  }
+}
+@media(max-width: 670px){
+  .Home__letter{
+    font-size: 50px;
+  }
+}
+.About{
+  width: 100%;
+  
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    .about{
+      border-bottom:solid 1px black ;
+    }
+  }
+  &__content{
+    display: flex;
+    &__image{
+      width: 45%;
+      height: 400px;
+
+      .image{
+        margin: 50px 0 50px 200px;
+        border: solid 2px black;
+        border-radius: 100px;
+        height: 300px;
+        background-image: image-url('cropAMEMAN51017.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+    }
+    &__text{
+      width: 55%;
+      .white{
+        margin: 50px 200px 50px 0;
+        height: 300px;
+        &__sentence{
+          height: 100%;
+          font-size: 15px;
+          padding: 0 30px;
+          p{
+            text-indent: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 670px){
+  .About__content{
+    flex-direction: column;
+    align-items: center;
+    &__image{
+      width: 60%;
+      height: 40%;
+      .image{
+        margin: 0 0 10px 0;
+        height: 250px;
+      }
+    }
+    &__text{
+      width: 100%;
+      margin-bottom: 40px;
+      .white{
+        margin: 10px;
+        &__sentence{
+          padding: 20px 60px;
+        }
+      }
+    }
+  }
+}
+
+.Skil{
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    .skil{
+      border-bottom:solid 1px black ;
+    }
+  }
+  &__content{
+    width: 100%;
+    .html{
+      height: 50px;
+      padding: 30px;
+      margin: 100px 30px;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+}
+@media(max-width: 670px){
+  .Skil__content .html{
+    font-size: 20px;
+  }
+}
+
+.Work{
+  &__title{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    .work{
+      border-bottom:solid 1px black ;
+    }
+  }
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__left{
+      width: 60%;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image{
+        background-image: image-url('furan.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 70%;
+        width: 70%;
+      }
+    }
+    &__right{
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      .text{
+        height: 40%;
+        width: 70%;
+        font-size: 15px;
+        .furanku{
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.Contact{
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    .contact{
+      border-bottom:solid 1px black ;
+    }
+  }
+  &__content{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .twitter{
+      margin: 10px;
+      text-decoration: none;
+    }
+    .qiita{
+      margin: 10px;
+      text-decoration: none;
+    }
+  }
+}
